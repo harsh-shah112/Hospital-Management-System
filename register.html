@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+<html lang="en-us">
+<head>
+
+<title>Register</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" id="bootstrap-css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="register.css">
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["lname"].value;
+  if (x == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+
+  var x = document.forms["myForm"]["password"].value;
+  if (x == "") {
+    alert("password must be filled out");
+    return false;
+  }
+    var x = document.forms["myForm"]["cpassword"].value;
+  if (x == "") {
+    alert("password must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Email id  must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["number"].value;
+  if (x == "") {
+    alert("Contact number must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["answer"].value;
+  if (x == "") {
+    alert("answer must be filled out");
+    return false;
+  }
+  else{ document.getElementById("demo").innerHTML = "Your form is submitted successfully";}
+}
+</script>
+
+</head>
+
+<body>
+<img src="CIMS-Website.jpg" alt="CIMS Hospital" id="image">
+<div>
+<div class="site-header">
+<ul>
+ <li id="leftalign"><a class="active" href="home.html">Home</a></li>
+  <li><a href="News.html">Care & Services</a></li>
+   <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+  <li><a href="register.html">Register Now</a></li>
+</ul>
+</div>
+</div>
+
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        
+                        <h3>Welcome</h3>
+						<p>If you already have an account then please click on Login </p>
+                   
+                        <input type="submit" onclick="window.location.href='login.html'" name="login" value="Login"/><br/>
+                    </div>
+                    <div class="col-md-9 register-right">
+				
+                        <div> 
+                            <div>
+                                <h3 class="register-heading">Registration</h3>
+								<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+						
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="fname" placeholder="First Name *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="lname" placeholder="Last Name *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" name="password" placeholder="Password *" value="" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" name="cpassword" placeholder="Confirm Password *" value="" required/>
+                                        </div>
+                                        <div class="form-group leftalign">
+                                           
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="male" checked>
+                                                    <span> Male </span> 
+                                                </label>
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="female">
+                                                    <span>Female </span> 
+                                                </label>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Your Email *" value="" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="number" class="form-control" placeholder="Your Phone *" value="" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                                <option>What is your Birthdate?</option>
+                                                <option>What is Your old Phone Number</option>
+                                                <option>What is your Pet Name?</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="answer" placeholder="Enter Your Answer *" value="" required/>
+                                        </div>
+                                        <input type="submit" class="btnRegister"  value="Register" />
+										<p id="demo"> </p>
+                                    </div>
+                                </div>
+								</form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+			 
+ <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Contact Information</h6>
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+	  <p><span class="glyphicon glyphicon-map-marker"></span> Arizona, USA</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1800-446-2279 </p>
+      <p><span class="glyphicon glyphicon-envelope"></span> mycare@CIMS.com</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Departments</h6>
+          <ul class="footer-links">
+            <li><a href="">Anaesthesiology</a></li>
+            <li><a href="">Cardiac Surgery</a></li>
+            <li><a href="">Gastroenterology</a></li>
+            <li><a href="">Neuro and Spine Surgery</a></li>
+            <li><a href="">Radiology</a></li>
+            <li><a href="">Trauma Care</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+			<li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="News.html">CARE & SERVICES</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <a href="#">CIMS</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"><img src="facebook1.png" alt="facebook"/></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"><img src="twitter1.png" alt="twitter"/></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"><img src="instagram1.png" alt="instagram"/></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"><img src="linkedin1.png" alt="linkedin"/></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>	
+  </body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html> 
+<html lang="en-us">
+<head>
+<title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" id="bootstrap-css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="contactus.css">
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["lname"].value;
+  if (x == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["address"].value;
+  if (x == "") {
+    alert("address must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["city"].value;
+  if (x == "") {
+    alert("city must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["state"].value;
+  if (x == "") {
+    alert("state must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["zip"].value;
+  if (x == "") {
+    alert("Zip code must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Email id  must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["number"].value;
+  if (x == "") {
+    alert("Contact number must be filled out");
+    return false;
+  }
+  else{ document.getElementById("demo").innerHTML = "Your form is submitted successfully";}
+}
+</script>
+</head>
+
+<body style="background-color: #001f3f;">
+<img src="CIMS-Website.jpg" alt="CIMS Hospital" id="image">
+
+<div>
+<div class="site-header">
+<ul>
+  <li id="leftalign"><a class="active" href="home.html">Home</a></li>
+  <li><a href="News.html">Care & Services</a></li>
+   <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+  <li><a href="register.html">Register Now</a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="container contact">
+	<div class="row">
+		<div class="col-md-3" id="colmd3">
+			<div class="contact-info">
+				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"  />
+				<h2>Contact Us</h2>
+				<h4>We would love to hear from you!</h4>
+				<h4>Please fill appointment form.</h4>
+				<h4>Or </h4>
+				<h4>Call Us At :</h4>
+				<h4>CIMS Care Unit</h4>
+				<h4>1800-446-2279 (toll-free)</h4>
+				<h4>8 a.m. to 5 p.m.</h4>
+				<h4>Mountain standard time,</h4>
+				<h4> Monday through Friday</h4>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>		
+					
+				</div>
+		</div>
+		
+		<div class="col-md-9">
+	<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+			<div class="contact-form">
+			
+				<div class="form-group">
+				  <label  class="control-label col-sm-12">At which CIMS Clinic location are you requesting an appointment?</label>				          
+					
+					<div class="form-check">
+						<label class="form-check-label"  for="radio1">
+							<input type="radio" class="form-check-input" id="radio1" name="optradio1" value="option1" checked>Phoenix/Scottsdale, Arizona
+						</label>
+					</div>
+				
+				<div class="form-check">
+					<label class="form-check-label" for="radio2">
+						<input type="radio" class="form-check-input" id="radio2" name="optradio2" value="option2">Jacksonville, Florida
+					</label>
+				</div>
+    
+				<div class="form-check">
+					<label class="form-check-label" for="radio3">
+						<input type="radio" class="form-check-input" id="radio3" name="optradio3" value="option3">Rochester, Minnesota
+					</label>
+				</div>	
+				
+			  </div>
+			
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="fname">First Name:</label>				          
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="lname">Last Name:</label>				          
+					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>				  
+				</div>
+				
+			 <div class="form-group">
+				  <label  class="control-label col-sm-12">Gender</label>				          
+					
+					<div class="form-check">
+						<label class="form-check-label"  for="radio10">
+							<input type="radio" class="form-check-input" id="radio10" name="optradio4" value="option4" checked>Male
+						</label>
+					</div>
+				
+				<div class="form-check">
+					<label class="form-check-label" for="radio11">
+						<input type="radio" class="form-check-input" id="radio11" name="optradio5" value="option5">Female
+					</label>
+				</div>
+    			
+			  </div>
+			  
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="address">Address:</label>				  
+					<input type="text" class="form-control" id="address" name="address" required>				 
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="city">City:</label>				  
+					<input type="text" class="form-control" id="city" name="city" required>				 
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="state">State:</label>				  
+					<input type="text" class="form-control" id="state" name="state" required>				 
+				</div>
+
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="zip">Zip Code:</label>				  
+					<input type="text" class="form-control" id="zip" name="zip" required>				 
+				</div>
+
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="email">Email Address:</label>				  
+					<input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>				 
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="number">Contact Number:</label>				  
+					<input type="text" class="form-control" id="number" placeholder="Enter Contact Number" name="number" required>				 
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-12">Does the patient have health insurance?</label>				          
+					
+					<div class="form-check">
+						<label class="form-check-label"  for="radio21">
+							<input type="radio" class="form-check-input" id="radio21" name="optradio6" value="option6" checked>Yes
+						</label>
+					</div>
+				
+				<div class="form-check">
+					<label class="form-check-label" for="radio22">
+						<input type="radio" class="form-check-input" id="radio22" name="optradio7" value="option7">No
+					</label>
+				</div>
+    
+				<div class="form-check">
+					<label class="form-check-label" for="radio23">
+						<input type="radio" class="form-check-input" id="radio23" name="optradio8" value="option8">International Patient
+					</label>
+				</div>	
+				
+			  </div>
+			  
+				<div class="form-group">
+				  <label class="control-label col-sm-12">Have you previously received care at Mayo Clinic?</label>				          
+					
+					 <div class="form-check">
+						<label class="form-check-label" for="radio7">
+							<input type="radio" class="form-check-input" id="radio7" name="optradio9" value="option9" checked>Yes
+						</label>
+					</div>
+    
+					<div class="form-check">
+							<label class="form-check-label" for="radio8">
+								<input type="radio" class="form-check-input" id="radio8" name="optradio10" value="option10">No
+							</label>
+					</div>
+    
+					<div class="form-check">
+						<label class="form-check-label" for="radio9">
+							<input type="radio" class="form-check-input" id="radio9" name="optradio11" value="option11">Don't Know
+						</label>
+					</div>			
+				</div>
+				
+				
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-12" for="problem">What is the primary medical problem or diagnosis for the appointment request?</label>				
+					<textarea class="form-control" rows="5" id="problem" required></textarea>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-12" for="problem">How long has the patient had this problem?</label>				
+					<select id="days" name="issue">
+							<option value="1">1</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+					</select>	
+					<select id="count" name="count">
+							<option value="Days">Days</option>
+						  <option value="Months">Months</option>
+						  <option value="Years">Years</option>
+						  
+					</select>
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-12" for="visit">Are there additional medical problems the patient needs assessed during this visit?</label>				
+					<textarea class="form-control" rows="5" id="visit"></textarea>				  
+				</div>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="comment">Comment:</label>				
+					<textarea class="form-control" rows="4" id="comment"></textarea>				  
+				</div>
+				
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Submit</button>
+				  </div>
+				</div> 
+				<p id="demo"> </p>
+			</div>
+		</div>
+	</div>
+	</form>
+</div>
+
+ 
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Contact Information</h6>
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+	  <p><span class="glyphicon glyphicon-map-marker"></span> Arizona, USA</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1800-446-2279 </p>
+      <p><span class="glyphicon glyphicon-envelope"></span> mycare@CIMS.com</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Departments</h6>
+          <ul class="footer-links">
+            <li><a href="">Anaesthesiology</a></li>
+            <li><a href="">Cardiac Surgery</a></li>
+            <li><a href="">Gastroenterology</a></li>
+            <li><a href="">Neuro and Spine Surgery</a></li>
+            <li><a href="">Radiology</a></li>
+            <li><a href="">Trauma Care</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+			<li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="News.html">CARE & SERVICES</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <a href="#">CIMS</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"><img src="facebook1.png" alt="facebook"/></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"><img src="twitter1.png" alt="twitter"/></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"><img src="instagram1.png" alt="instagram"/></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"><img src="linkedin1.png" alt="linkedin"/></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
